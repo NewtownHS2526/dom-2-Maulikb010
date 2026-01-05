@@ -92,10 +92,10 @@ if (runDemo1) {
 // ============================================
 // TODO: Students should complete this exercise
 // Select the element with id 'practice-text-1' and change its textContent
-const practiceBtn1 = document.getElementById('practice-btn-1');
+const textContent = document.getElementById('practice-btn-1');
 
-if (practiceBtn1) {
-  practiceBtn1.addEventListener('click', function() {
+if (textContent) {
+  textContent.addEventListener('click', function() {
     // STUDENT CODE HERE:
     // 1. Use getElementById to select 'practice-text-1'
     // 2. Change its textContent to "I changed this text!"
@@ -103,7 +103,7 @@ if (practiceBtn1) {
     // Example solution (students should write this):
     const practiceText1 = document.getElementById('practice-text-1');
     if (practiceText1) {
-      practiceText1.textContent = "I changed this text!";
+      practiceText1.textContent = "new text";
       practiceText1.style.color = "#10b981";
       practiceText1.style.fontWeight = "bold";
     }
@@ -128,7 +128,7 @@ if (practiceBtn2) {
     // Example solution (students should write this):
     const practiceHtml1 = document.getElementById('practice-html-1');
     if (practiceHtml1) {
-      practiceHtml1.innerHTML = "<strong>Bold HTML</strong> and <em>italic text</em>";
+      practiceHtml1.innerHTML = "<strong>Bold text</strong>";
       practiceHtml1.style.backgroundColor = "#fef3c7";
     }
     
@@ -271,7 +271,7 @@ if (practiceBtn5) {
     // Example solution (students should write this):
     const boxItems = document.getElementsByClassName('box-item');
     for (let i = 0; i < boxItems.length; i++) {
-      boxItems[i].innerHTML = `<span style="color: #10b981; font-weight: bold;">Updated Box ${i + 1}!</span>`;
+      boxItems[i].innerHTML = `<span style='color: green;'>Updated!</span>`;
       boxItems[i].style.backgroundColor = "#d1fae5";
     }
     
